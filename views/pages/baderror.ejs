@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <%- include('../partials/head')%>
+</header>
+
+
+<body class="container">
+    <header>
+        <%- include('../partials/header')%>
+        <style>
+            html {
+                background: url(img/main.png) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        </style>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+
+            <h2>An error has occured :(</h2>
+            <p> We are very sorry but something has gone horribly wrong</p>
+            <script>
+                console.log("the horrible error is: <%=error %> ");
+            </script>
+
+
+        </div>
+    </main>
+
+
+    <footer>
+        <%- include('../partials/footer')%>
+    </footer>
+
+</body>
+
+</html>
